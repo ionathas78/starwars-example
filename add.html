@@ -67,7 +67,7 @@
     $("#add-btn").on("click", function(event) {
       event.preventDefault();
       var newCharacter = {
-        routeName: $("#name").val().replace(/ /g, ""),
+        routeName: $("#name").val().replace(/ /g, "").toLowerCase(),
         name: $("#name").val().trim(),
         role: $("#role").val().trim(),
         age: $("#age").val().trim(),
