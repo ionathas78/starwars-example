@@ -42,12 +42,12 @@
 
               <div class="form-group">
                 <label for="age">Age</label>
-                <input type="text" class="form-control" id="age">
+                <input type="number" class="form-control" id="age">
               </div>
 
               <div class="form-group">
                 <label for="force-points">Force Points</label>
-                <input type="text" class="form-control" id="force-points">
+                <input type="number" class="form-control" id="force-points">
               </div>
 
             </form>
@@ -70,8 +70,8 @@
         routeName: $("#name").val().replace(/ /g, "").toLowerCase(),
         name: $("#name").val().trim(),
         role: $("#role").val().trim(),
-        age: $("#age").val().trim(),
-        forcePoints: $("#force-points").val().trim()
+        age: $("#age").val(),
+        forcePoints: $("#force-points").val()
       };
 
       // Question: What does this code do??
