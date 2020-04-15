@@ -79,6 +79,8 @@ app.post("/api/characters", function(req, res) {
   // Using a RegEx Pattern to remove spaces from newCharacter
   // You can read more about RegEx Patterns later https://www.regexbuddy.com/regex.html
   newCharacter.routeName = newCharacter.name.replace(/\s+/g, "").toLowerCase();
+  newCharacter.age = parseInt(newCharacter.age);
+  newCharacter.forcePoints = parseInt(newCharacter.forcePoints);
 
   console.log(newCharacter);
 
